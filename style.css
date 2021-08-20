@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.full-website {
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+/* Menu Bar */
+
+.menu {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.menu ul li {
+    display: inline-block;
+}
+
+.menu ul li a {
+    display: block;
+    text-decoration: none;
+    background-color: #48dbfb;
+    color: #000;
+    padding: 10px 15px;
+    font-size: 15px;
+    font-weight: 700;
+    position: relative;
+    transition: .4s;
+}
+
+.menu ul li:hover a {
+    background: #fff;
+    color: #10d4ff;
+    
+}
+
+.menu ul li a::after {
+    content: "";
+    position: absolute;
+    left: 15%;
+    bottom: 6px;
+    width: 0;
+    height: 3px;
+    background-color: #000;
+    transition: .4s;
+}
+
+.menu ul li a:hover::after {
+    width: 70%;
+}
+
+
+/* Banner Section */
+
+.banner {
+    background: #48dbfb;
+    color: #f8f4f4;
+    text-align: center;
+    padding: 100px 0 120px 0;
+}
+
+.banner-title {
+    font-size: 21px;
+    margin-bottom: 20px;
+}
+
+.banner-heading {
+    font-size: 27px;
+    margin-bottom: 15px;
+}
+
+.banner-button a {
+    background: #ffffff;
+    color: #dddddd;
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px 25px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.banner-button a:hover {
+    color: #fff;
+}
+
+.banner-button a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #000;
+    transition: .4s;
+    z-index: -1;
+}
+
+.banner-button a:hover::before {
+    width: 100%;
+}
+
+
+/* Transform Section */
+
+.transform {
+    background: #f7f9f9;
+    text-align: center;
+}
+
+.transform-title {
+    padding: 90px 0;
+}
+
+.transform-title h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.img-dib {
+    display: inline-block;
+    margin: 0 20px 20px 0;
+}
+
+.image-1,
+.image-2,
+.image-3,
+.image-4,
+.image-5,
+.image-6,
+.image-7,
+.image-8 {
+    overflow: hidden;
+}
+
+.image-1 img,
+.image-2 img,
+.image-3 img,
+.image-4 img,
+.image-5 img,
+.image-6 img,
+.image-7 img,
+.image-8 img {
+    transition: .4s;
+}
+
+.image-1 img:hover {
+    transform: rotate(360deg);
+}
+
+.image-2 img:hover {
+    transform: rotate(30deg);
+}
+
+.image-3 img:hover {
+    transform: rotate(-30deg);
+}
+
+.image-4 img:hover {
+    transform: rotate(-30deg);
+}
+
+.image-5 img:hover {
+    transform: rotate(30deg);
+}
+
+.image-6 img:hover {
+    transform: rotate(360deg);
+}
+
+.image-7 img:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.image-8 img:hover {
+    transform: scale(1.1) rotate(-5deg);
+}
+
+.t-title h2 {
+    font-size: 30px;
+    font-weight: 450;
+    margin: 190px 0 15px 0;
+}
+
+.t-paragraph p {
+    padding: 0 370px;
+    color: #868c9d;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+
+.button-style {
+    display: inline-block;
+    text-decoration: none;
+    background: #000;
+    padding: 20px 20px;
+    margin: 18px 0;
+    font-weight: 500;
+}
+
+.style-1 a,
+.style-2 a,
+.style-3 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.style-1:hover a,
+.style-2:hover a,
+.style-3:hover a {
+    color: #000;
+}
+
+.style-1 {
+    transform: rotate(-40deg);
+}
+
+.style-2 {
+    margin: 0 250px;
+}
+
+.style-3 {
+    transform: rotate(40deg);
+}
+
+.style-1:hover {
+    transform: rotate(0deg) scale(1.2);
+    transition: .5s;
+    background: #39cdfb;
+}
+
+.style-2:hover {
+    transform: scale(1.2);
+    transition: .5s;
+    background: #39cdfb;
+}
+
+.style-3:hover {
+    transform: rotate(0deg) scale(1.2);
+    transition: .5s;
+    background: #39cdfb;
+}
+
+
+/* Footer */
+
+.footer {
+    background: #2e2f31;
+    color: #ddd;
+    text-align: center;
+    padding: 20px 0;
+    font-weight: 500;
+}
